@@ -1,0 +1,40 @@
+// Icon
+.SyncIcon {
+  color: rgb(163, 21, 21);
+  margin-left: 4px;
+  cursor: pointer;
+}
+.SyncIcon2 {
+  color: rgb(163, 21, 21);
+  margin-left: -17px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.FindInPageIcon {
+  color: rgb(163, 21, 21);
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 3px;
+}
+.customDisable {    //button disable with focus allowed, don't forget to add conditional event trigger with null
+  color: $gray-600;
+  opacity: 0.65;
+  pointer-events: none;
+}
+.IconDisable {
+  color: lightgray;
+  opacity: 0.65;
+  pointer-events: none;
+}
+.sticky-col {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+}
+.first-col {
+  width: 100px;
+  min-width: 70px;
+  max-width: 100px;
+  left: 0px;
+  color: gray;
+}

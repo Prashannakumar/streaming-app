@@ -1,0 +1,146 @@
+// Group
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.group {
+  position: relative;
+  padding-right: 0px;
+  > label {
+    position: absolute;
+    // top: 0.45em;
+    // left: 0.45em;
+    top: -1.6px;
+    left: 2.5px;
+    background-color: inherit;
+    font-size: small;
+    font-weight: 700;
+    color: gray;
+  }
+  > input {
+    padding: 0.2em;
+    border: 1.5px solid gray;
+    outline: none;
+    text-align: right;
+    // width: 109px;
+    min-width: 158px;
+    max-width: 162px;
+    height: 50px;
+    padding-bottom: 0px;
+    color: gray;
+    border-radius: 0.25rem;
+  }
+  button {
+    width: 162px;
+    // min-width: 109px;
+    // max-width: 138px;
+    height: 50px;
+  }
+}
+.IpGrp1 {
+  padding-right: 0px;
+  .MarginLeft {
+    margin-left: 112px;
+  }
+  &:first-child {
+    padding-bottom: 2px;
+  }
+}
+.SmIpGrp {
+  font-weight: 600;
+  font-size: large;
+  color: rgb(238, 104, 126);
+}
+.IpGrp2 {
+  padding-right: 42px;
+  margin-left: -24px;
+  &:first-child {
+    padding-bottom: 2px;
+  }
+}
+
+.ModalIpGrpRightAlign {
+  margin-left: 425px;
+  margin-bottom: 5px;
+}
+
+.CutWtIpgroup,
+.ModalIpGrp {
+  position: relative;
+  padding: 0px 3px 0px 0px;
+  > label {
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em;
+    background-color: inherit;
+    font-size: x-small;
+    font-weight: 700;
+    color: gray;
+  }
+  > input {
+    padding: 0.8em;
+    border: 1.5px solid gray;
+    outline: none;
+    text-align: right;
+    width: 109px;
+    height: 45px;
+    padding-bottom: 0px;
+    color: gray;
+    border-radius: 0.25rem;
+  }
+}
+
+.TotalIp {
+  label {
+    font-size: small;
+  }
+  input {
+    // width: 230px;
+    min-width: 334px;
+    max-width: 334px;
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+    padding-top: 0px;
+  }
+}
+
+#estimate-container {
+  .NetOp.group,
+  .OpGrp.group {
+    width: 100%;
+    input {
+      min-width: 100%;
+    }
+  }
+}
+
+.NetOp {
+  font-size: larger;
+  font-weight: 500;
+}
+
+.LgOpGroup{
+  position: relative;
+  padding-right: 3px;
+  > label {
+    position: absolute;
+    top: -1.6px;
+    left: 2.5px;
+    background-color: inherit;
+    font-size: small;
+    font-weight: 700;
+    color: gray;
+  }
+  > input {
+    padding: 0.8em;
+    border: 1.5px solid gray;
+    border-radius: 0.25rem;
+    outline: none;
+    text-align: right;
+    height: 50px;
+    width: 260px;
+    padding-bottom: 0px;
+    color: gray;
+  }
+}

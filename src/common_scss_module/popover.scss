@@ -1,0 +1,11 @@
+.custom-popover {
+  min-width: max-content;
+}
+
+.custom-popover1 {
+  min-width: max-content;
+  background-color: aliceblue !important;
+}
+.custom-popover1 .popover-arrow::after {
+    border-top-color: aliceblue !important;
+}

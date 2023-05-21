@@ -1,0 +1,36 @@
+<header
+  class="header p-2 mb-2 d-flex bg-primary text-white justify-content-between"
+>
+  <div class="d-flex flex-row">
+    <div class="m-2 me-4">{{ "video" | titlecase }}</div>
+    <button
+      class="btn btn-outline-light mb-2 me-2"
+      (click)="openModalDialogCustomClass(content)"
+    >
+      Modal with dialog custom class
+    </button>
+  </div>
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">Modal title</h4>
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        (click)="modal.dismiss('Cross click')"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <p>One fine body&hellip;</p>
+    </div>
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-light"
+        (click)="modal.close('Close click')"
+      >
+        Close
+      </button>
+    </div>
+  </ng-template>
+</header>

@@ -1,0 +1,130 @@
+//row-column
+.UsrStatusRow {
+  font-weight: 700;
+  button {
+    background-color: rgb(163, 21, 21);
+    text-align: center;
+    height: 28px;
+    padding-top: 2px;
+    i {
+      color: white;
+      font-size: 16px;
+      vertical-align: -2px;
+    }
+    a {
+      color: white;
+      font-size: small;
+      font-weight: 500;
+      margin-left: 2px;
+    }
+  }
+}
+.BtnRow {
+  div {
+    height: 49px;
+  }
+  &:first-child {
+    padding-bottom: 0px;
+    button {
+      background-color: rgb(163, 21, 21);
+      text-align: center;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    a {
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 2px;
+    }
+  }
+  &:nth-child(2) {
+    button {
+      background-color: rgb(48, 160, 15);
+      text-align: center;
+      width: 267px;
+    }
+    i {
+      font-size: 18px;
+      color: white;
+      padding-top: 5px;
+      margin-left: 12px;
+      vertical-align: 40%;
+    }
+    a {
+      color: white;
+      font-size: large;
+      font-weight: 500;
+      margin-left: 5px;
+      vertical-align: 30%;
+    }
+  }
+}
+.ModalBarcodeCutWtRow {
+  width: 95.5%;
+}
+.ModalContentRow {
+  margin-left: -10px;
+}
+.StoneWtCol {
+  margin-left: 3.5px;
+}
+
+.gray-text {
+  font-weight: 700;
+  color: grey;
+  font-size: 18px;
+  &.text-sm {
+    font-size: 16px;
+  }
+}
+
+.value-text {
+  font-weight: 700;
+  font-size: 18px;
+  &.text-sm {
+    font-size: 16px;
+  }
+}
+
+.GenBarCodeBtnCol {
+  padding-right: 5px;
+}
+.OrnamentCol {
+  margin-right: -12px;
+}
+.DTCol {
+  font-weight: 700;
+  font-size: 16px;
+}
+.EsNumCol {
+  font-weight: 700;
+  font-size: 18px;
+  color: gray;
+  padding: 0px;
+}
+.EsNumCol2 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.DiscountCol {
+  padding-left: 0px;
+  div {
+    height: 180px;
+  }
+  th {
+    height: 30px;
+    background-color: rgb(163, 21, 21);
+    color: white;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  textarea {
+    width: 482px;
+    height: 152px;
+  }
+}
+.EsNumDateCol {
+  margin-left: -12px;
+  padding-right: 0px;
+}

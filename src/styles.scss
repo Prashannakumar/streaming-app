@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./common_scss_module/_variable";
+@import "bootstrap/scss/bootstrap.scss";
+@import "./common_scss_module/index.scss";
+// @import "~ngx-spinner/animations/line-scale-party.css";
+
+// override
+@import "./common_scss_module/override.scss";

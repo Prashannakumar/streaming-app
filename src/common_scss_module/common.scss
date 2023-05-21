@@ -1,0 +1,406 @@
+// commom in 2
+.SelInvoiceDialog {
+  max-width: 590px;
+  top: 43%;
+  left: 23.5%;
+}
+.SelInvoiceContent {
+  width: 92%;
+  font-size: small;
+  left: -49px;
+  bottom: 15px;
+}
+.SelInvoiceModalHdr {
+  background-color: rgb(163, 21, 21);
+  color: white;
+  margin: 0px;
+  width: 100%;
+  div {
+    padding-top: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  i {
+    color: white;
+    font-size: 18px;
+  }
+}
+.InvoiceSelBtn {
+  button {
+    font-size: small;
+    background-color: rgb(163, 21, 21);
+    color: white;
+  }
+  span {
+    vertical-align: -8%;
+    font-size: small;
+    color: white;
+  }
+}
+.InvoiceNoModalDialog {
+  max-width: 900px;
+  top: 40%;
+  left: -12.5%;
+}
+.InvoiceNoModalContent {
+  width: 92%;
+  top: -109px;
+  right: -284px;
+  height: 436px;
+  font-size: small;
+  border: 1px solid rgb(163, 21, 21);
+}
+.InvoiceNoModalHdr {
+  background-color: rgb(163, 21, 21);
+  color: white;
+  margin: 0px;
+  width: 100%;
+  div {
+    padding-top: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  i {
+    color: white;
+    font-size: 18px;
+  }
+}
+.InvoiceTables {
+  border-collapse: collapse;
+  width: 99%;
+  margin-top: 12px;
+  margin-left: 3px;
+  border: 1px solid;
+  thead {
+    background-color: rgb(163, 21, 21);
+    color: white;
+    font-size: small;
+    padding: 0px;
+    display: block;
+    td {
+      text-align: center;
+    }
+  }
+  tbody {
+    display: block;
+    overflow: auto;
+    color: rgb(110, 100, 100);
+    tr {
+      td {
+        &:nth-child(1) {
+          text-align: right;
+        }
+        &:nth-child(4) {
+          text-align: right;
+        }
+        &:nth-child(5) {
+          text-align: right;
+        }
+        &:nth-child(6) {
+          text-align: right;
+          text-align: right;
+        }
+        &:nth-child(7) {
+          text-align: right;
+        }
+        &:nth-child(8) {
+          text-align: right;
+        }
+        &:nth-child(9) {
+          text-align: right;
+        }
+      }
+    }
+  }
+  td {
+    padding: 3px;
+    border: 1px solid;
+    overflow-x: auto;
+    overflow-y: auto;
+    &:nth-child(1) {
+      width: 48px;
+    }
+    &:nth-child(2) {
+      width: 114px;
+    }
+    &:nth-child(3) {
+      width: 83px;
+    }
+    &:nth-child(4) {
+      width: 83px;
+    }
+    &:nth-child(5) {
+      width: 83px;
+    }
+    &:nth-child(6) {
+      width: 83px;
+    }
+    &:nth-child(7) {
+      width: 83px;
+    }
+    &:nth-child(8) {
+      width: 83px;
+    }
+    &:nth-child(9) {
+      width: 83px;
+    }
+    &:nth-child(10) {
+      width: 49px;
+    }
+  }
+  tr {
+    display: flex;
+    align-items: stretch;
+    cursor: pointer;
+    border: 0px solid rgb(207, 213, 221);
+    border-collapse: collapse;
+  }
+}
+.InvoiceTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid rgb(163, 21, 21);
+  tbody {
+    overflow: auto;
+    color: rgb(110, 100, 100);
+    border: 1px solid rgb(163, 21, 21);
+  }
+  thead {
+    border: 1px solid rgb(163, 21, 21);
+  }
+  u {
+    color: blue;
+    cursor: pointer;
+  }
+  th {
+    border: 1px solid rgb(163, 21, 21);
+  }
+  td {
+    padding: 3px;
+    border: 1px solid;
+    overflow-x: auto;
+    overflow-y: auto;
+    &:nth-child(1) {
+      width: 120px;
+      text-align: center;
+    }
+    &:nth-child(3) {
+      width: 120px;
+      text-align: center;
+    }
+    &:nth-child(4) {
+      width: 120px;
+      text-align: center;
+    }
+    &:nth-child(5) {
+      width: 80px;
+      text-align: center;
+    }
+    &:nth-child(6) {
+      width: 120px;
+      text-align: center;
+    }
+  }
+}
+.InvoiceTabletd {
+  td {
+    &:nth-child(2) {
+      width: 80px;
+      text-align: center;
+    }
+  }
+}
+.InvoiceFootRow {
+  margin-left: 504px;
+  tfoot {
+    tr {
+      td {
+        &:nth-child(6) {
+          width: 100px;
+          font-weight: bold;
+        }
+        &:nth-child(7) {
+          width: 100px;
+          font-weight: bold;
+        }
+        &:nth-child(8) {
+          width: 100px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+.PaymentVl {
+  border-left: 1px solid rgb(163, 21, 21);
+  height: 315px;
+  position: absolute;
+  left: -2%;
+  top: -6px;
+}
+.PayMethodRow1 {
+  div {
+    &:first-child {
+      font-size: 17px;
+      font-weight: 500;
+    }
+  }
+  input {
+    width: 91%;
+    margin-left: -14px;
+  }
+}
+.PayAddBtnCol {
+  button {
+    color: white;
+    background-color: rgb(70, 190, 40);
+    height: 28px;
+    padding-top: 2px;
+    > a {
+      font-weight: 500;
+    }
+  }
+}
+.PayMethodRow2 {
+  div {
+    &:first-child {
+      padding-left: 0px;
+      margin-left: 0px;
+      font-size: 17px;
+      font-weight: 500;
+      padding-left: 0px;
+      margin-left: 0px;
+      font-size: 17px;
+      font-weight: 500;
+    }
+  }
+  select {
+    margin-left: -18px;
+    width: 100px;
+    height: 100%;
+    margin-left: -16px;
+    height: 100%;
+  }
+  input {
+    width: 88%;
+    height: 100%;
+    margin-left: 2px;
+    width: 88%;
+    height: 100%;
+    margin-left: 2px;
+  }
+}
+.PayMethodColRight {
+  .RowTitle {
+    padding-left: 0px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+}
+
+// stone
+.SelStoneType {
+  height: 25px;
+  width: 26%;
+  margin: 0px 4px 0px 4px;
+}
+.SelStoneQual {
+  height: 25px;
+  width: 26%;
+  margin: 0px 4px 0px 4px;
+}
+.StoneWtIp {
+  > label {
+    position: absolute;
+    left: 0.1em;
+    background-color: inherit;
+    font-size: 9px;
+    font-weight: 700;
+    color: gray;
+  }
+  > input {
+    border: 1.5px solid gray;
+    outline: none;
+    text-align: right;
+    width: 118px;
+    height: 25px;
+    padding-bottom: 0px;
+    color: gray;
+  }
+}
+.required-field::after {
+  content: "*";
+  color: red;
+}
+
+.required-field1::before {
+  content: "*";
+  color: red;
+}
+.Mandatory-field {
+  > label::after {
+    content: "*";
+    color: red;
+  }
+  p {
+    // color:red;
+    width: 100%;
+    margin-top: 0.25rem;
+    margin-bottom: 0rem;
+    font-size: 0.875em;
+    color: #30a00f;
+  }
+}
+
+.passwordValidation {
+  opacity: 0.6;
+  text-decoration-line: line-through;
+}
+
+.fixheight {
+  overflow-y: auto;
+  max-height: 170px;
+}
+
+/* Scrollbar Styling */
+// ::-webkit-scrollbar {
+//   width: 6px;
+//   height: 6px;
+// }
+
+// *:hover::-webkit-scrollbar {
+//   width: 10px;
+//   height: 10px;
+// }
+
+// ::-webkit-scrollbar-track {
+//   background-color: #ebebeb;
+//   -webkit-border-radius: 10px;
+//   border-radius: 10px;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   -webkit-border-radius: 10px;
+//   border-radius: 10px;
+//   background: #6d6d6d;
+// }
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ababab;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box; // <== make the border work
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

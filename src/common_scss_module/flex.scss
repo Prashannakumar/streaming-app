@@ -1,0 +1,9 @@
+.flex-container {
+  .justify-content-center,
+  .justify-content-between {
+    & > * {
+      margin: 0px 5px;
+      flex-grow: 1;
+    }
+  }
+}

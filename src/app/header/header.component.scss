@@ -1,0 +1,19 @@
+@import "../../common_scss_module/_variable";
+
+.header {
+  box-shadow: 0px 0px 6px 0px $light;
+  img {
+    height: 40px;
+  }
+}
+
+.dark-modal .modal-content {
+  background-color: #292b2c;
+  color: white;
+}
+.dark-modal .close {
+  color: white;
+}
+.light-blue-backdrop {
+  background-color: #5cb3fd;
+}

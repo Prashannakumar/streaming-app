@@ -1,0 +1,255 @@
+:root {
+  --font-family-sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  height: 100vh;
+  width: 100%;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.container {
+  border-style: solid;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: rgb(163, 21, 21);
+}
+
+.view {
+  margin: auto;
+  margin-left: -25px;
+  width: 262px;
+}
+
+input[readonly],
+input[disabled] {
+  background-color: rgba(128, 128, 128, 0.178);
+  border-width: thin;
+}
+
+textarea[name="ta1"] {
+  resize: none;
+}
+
+app-navbar {
+  min-width: 100% !important;
+}
+
+// purity
+.active_purity {
+  background-color: rgb(163, 21, 21);
+  color: white;
+}
+.active_purity_sel {
+  background-color: rgb(163, 21, 21);
+  color: white;
+  border-radius: 4px;
+}
+
+.cus_phone {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.603);
+}
+.cus_pport {
+  > div {
+    &:first-child {
+      color: gray;
+      padding: 0px;
+      font-size: smaller;
+      font-weight: 400;
+    }
+  }
+  div {
+    &:nth-child(2) {
+      font-weight: 500;
+      padding-right: 0px;
+      font-size: 13px;
+      padding-left: 0px;
+    }
+  }
+}
+.cus_eid {
+  > div {
+    &:first-child {
+      color: gray;
+      padding: 0px;
+      font-size: smaller;
+      font-weight: 400;
+    }
+  }
+  div {
+    &:nth-child(2) {
+      font-weight: 500;
+      padding-right: 0px;
+      font-size: 13px;
+      padding-left: 0px;
+    }
+  }
+}
+
+@import "./button.scss";
+@import "./card.scss";
+@import "./common.scss";
+@import "./extra.scss";
+@import "./group.scss";
+@import "./icon.scss";
+@import "./modal.scss";
+@import "./table.scss";
+@import "./row-col.scss";
+@import "./flex.scss";
+@import "./popover.scss";
+
+.side-bar > * {
+  background-color: #fff;
+  padding: 2em 1em;
+}
+.ng-sidebar__backdrop,
+.ng-sidebar {
+  z-index: 4 !important;
+}
+
+a {
+  img {
+    outline: none;
+  }
+}
+
+.estimate-custom-ng-select.ng-select-typeahead {
+  .ng-dropdown-panel {
+    .ng-dropdown-panel-items {
+      .ng-option {
+        border-bottom: 1px solid #c5c5c5;
+        &.ng-option-marked {
+          background-color: #a31515;
+          color: white;
+          .cus_phone,
+          .cus_pport > div:first-child,
+          .cus_eid > div:first-child {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+// .estimate-custom-ng-select.ng-select-typeahead {
+//   .ng-select-container {
+//     border-radius: 0.25rem !important;
+//   }
+// }
+.custom-ng-select {
+  .ng-dropdown-panel {
+    .ng-dropdown-panel-items {
+      .ng-option {
+        border-bottom: 1px solid #5ca8db95;
+        &.ng-option-marked {
+          background-color: #a31515;
+          color: white;
+          font-weight: bold;
+          .cus_phone,
+          .cus_pport > div:first-child,
+          .cus_eid > div:first-child {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .custom-ng-select {
+//   .ng-select-container {
+//     border-radius: 0.25rem !important;
+//   }
+// }
+
+.ng-select-height {
+  &.gray-border {
+    .ng-select-container {
+      border: 1.5px solid gray;
+    }
+  }
+  .ng-select-container {
+    border-radius: 5px !important;
+    height: 100% !important;
+    .ng-input {
+      top: calc(50% - 13px) !important;
+    }
+  }
+}
