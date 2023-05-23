@@ -3,43 +3,58 @@
   <ngb-carousel id="carouselHero" *ngIf="images" class="mb-3">
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
-        <img [src]="'/assets/'+1+'.jpg'" alt="Random first slide" />
+        <img [src]="'/assets/' + 1 + '.jpg'" alt="Random first slide" />
       </div>
       <div class="carousel-caption">
-        <button class="btn btn-primary" [routerLink]="'video'">Play</button>
+        <button class="btn btn-outline-primary" [routerLink]="'video'">
+          <span class="material-icons-outlined"> play_circle </span>
+        </button>
       </div>
     </ng-template>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
-        <img [src]="'/assets/'+2+'.jpg'" alt="Random second slide" />
+        <img [src]="'/assets/' + 2 + '.jpg'" alt="Random second slide" />
       </div>
       <div class="carousel-caption">
-        <button class="btn btn-primary" [routerLink]="'video'">Play</button>
+        <button class="btn btn-outline-primary" [routerLink]="'video'">
+          <span class="material-icons-outlined"> play_circle </span>
+        </button>
       </div>
     </ng-template>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
-        <img [src]="'/assets/'+3+'.jpg'" alt="Random third slide" />
+        <img [src]="'/assets/' + 3 + '.jpg'" alt="Random third slide" />
       </div>
       <div class="carousel-caption">
-        <button class="btn btn-primary" [routerLink]="'video'">Play</button>
+        <button class="btn btn-outline-primary" [routerLink]="'video'">
+          <span class="material-icons-outlined"> play_circle </span>
+        </button>
       </div>
     </ng-template>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
-        <img [src]="'/assets/'+4+'.jpg'" alt="Random fourth slide" />
+        <img [src]="'/assets/' + 4 + '.jpg'" alt="Random fourth slide" />
       </div>
       <div class="carousel-caption">
-        <button class="btn btn-primary" [routerLink]="'video'">Play</button>
+        <button class="btn btn-outline-primary" [routerLink]="'video'">
+          <span class="material-icons-outlined"> play_circle </span>
+        </button>
       </div>
     </ng-template>
   </ngb-carousel>
   <div class="d-flex flex-wrap">
-    <div class="card row-card text-bg-dark m-2" style="width: 18rem;" *ngFor="let x of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]">
-      <img [src]="'/assets/'+x+'.jpg'" class="card-img" alt="...">
+    <div
+      class="card row-card text-bg-dark m-2"
+      style="width: 18rem"
+      *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]" [routerLink]="'individual'"
+    >
+      <img [src]="'/assets/' + x + '.jpg'" class="card-img" alt="..." />
       <div class="card-img-overlay bottom-0 start-50">
         <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content.
+        </p>
         <p class="card-text"><small>Last updated 3 mins ago</small></p>
       </div>
     </div>

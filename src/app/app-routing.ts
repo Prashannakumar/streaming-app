@@ -15,6 +15,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./video-page/video-page.module').then((m) => m.VideoPageModule),
       },
+      {
+        path: 'individual',
+        loadChildren: () =>
+          import('./individual-page/individual-page.module').then((m) => m.IndividualPageModule),
+      },
     ],
   },
 ];
