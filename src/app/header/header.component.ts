@@ -17,4 +17,8 @@ export class HeaderComponent implements OnInit {
       backdropClass: 'light-blue-backdrop',
     });
   }
+
+  userLogOut(){
+    console.log('logged out')
+  }
 }

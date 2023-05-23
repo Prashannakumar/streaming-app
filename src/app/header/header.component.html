@@ -1,15 +1,34 @@
 <header
   class="header p-2 mb-2 d-flex bg-primary text-white justify-content-between"
 >
-  <div class="d-flex flex-row">
-    <div class="m-2 me-4">{{ "video" | titlecase }}</div>
-    <button
-      class="btn btn-outline-light mb-2 me-2"
-      (click)="openModalDialogCustomClass(content)"
-    >
-      Modal with dialog custom class
-    </button>
+  
+  <div class="m-2 me-4">
+    <span class="material-icons-outlined"> video_library </span>
   </div>
+  <div ngbDropdown class="d-inline-block">
+    <button
+      class="btn btn-primary"
+      id="dropdownForm1"
+      ngbDropdownToggle
+    >
+      <span class="material-icons-outlined"> account_circle </span>
+      {{ "user" | titlecase }}
+    </button>
+    <div ngbDropdownMenu aria-labelledby="dropdownForm1">
+      <button ngbDropdownItem (click)="openModalDialogCustomClass(content)">
+        <span class="material-icons-outlined"> person </span>Profile
+      </button>
+      <button ngbDropdownItem (click)="userLogOut()">
+        <span class="material-icons-outlined"> logout </span>Logout
+      </button>
+    </div>
+  </div>
+  <!-- <button
+    class="btn btn-outline-light mb-2 me-2"
+    (click)="openModalDialogCustomClass(content)"
+  >
+    Modal with dialog custom class
+  </button> -->
   <ng-template #content let-modal>
     <div class="modal-header">
       <h4 class="modal-title">Modal title</h4>
