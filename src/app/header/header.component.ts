@@ -8,21 +8,22 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HeaderComponent implements OnInit {
   constructor(private modalService: NgbModal) {}
-action: 'login'|'back'='login'
+  action: 'login' | 'back' = 'login';
   ngOnInit(): void {}
 
   openModalDialogCustomClass(content: any) {
     this.modalService.open(content, {
       modalDialogClass: 'dark-modal',
       backdropClass: 'light-blue-backdrop',
-      centered: true
+      centered: true,
     });
   }
 
   userLogOut() {
     console.log('logged out');
   }
-  login() {this.action = 'login'
+  login() {
+    this.action = 'login';
     // var element: any = document.getElementsByClassName('signIn');
     // element.classList.add('active-dx');
     // element.classList.remove('inactive-dx');
@@ -31,7 +32,8 @@ action: 'login'|'back'='login'
     // element1.classList.add('inactive-sx');
     // element1.classList.remove('active-sx');
   }
-  back() {this.action = 'back'
+  back() {
+    this.action = 'back';
     // var element: any = document.getElementsByClassName('signIn');
     // element.classList.remove('active-dx');
     // element.classList.add('inactive-dx');

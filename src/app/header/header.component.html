@@ -4,16 +4,15 @@
   <div class="m-2 me-4">
     <span class="material-icons-outlined"> video_library </span>
   </div>
-  <div ngbDropdown class="d-inline-block">
-    <button class="btn btn-primary" id="dropdownForm1" ngbDropdownToggle>
+  <div ngbDropdown class="d-inline-block m-2 me-4 mt-0">
+    <button class="btn btn-primary d-flex align-items-center" id="dropdownForm1" ngbDropdownToggle>
       <span class="material-icons-outlined"> account_circle </span>
-      {{ "user" | titlecase }}
     </button>
     <div ngbDropdownMenu aria-labelledby="dropdownForm1">
-      <button ngbDropdownItem (click)="openModalDialogCustomClass(content)">
+      <button ngbDropdownItem class="d-flex align-items-center" (click)="openModalDialogCustomClass(content)">
         <span class="material-icons-outlined"> person </span>Profile
       </button>
-      <button ngbDropdownItem (click)="userLogOut()">
+      <button ngbDropdownItem class="d-flex align-items-center" (click)="userLogOut()">
         <span class="material-icons-outlined"> logout </span>Logout
       </button>
     </div>

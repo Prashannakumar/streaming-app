@@ -1,52 +1,67 @@
 <div class="card bg-primary">
   <!-- <button class="btn btn-primary" [routerLink]="'video'">video</button> -->
-  <ngb-carousel id="carouselHero" *ngIf="images" class="mb-3">
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="'/assets/' + 1 + '.jpg'" alt="Random first slide" />
-      </div>
-      <div class="carousel-caption">
-        <button class="btn btn-outline-primary" [routerLink]="'video'">
-          <span class="material-icons-outlined"> play_circle </span>
-        </button>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="'/assets/' + 2 + '.jpg'" alt="Random second slide" />
-      </div>
-      <div class="carousel-caption">
-        <button class="btn btn-outline-primary" [routerLink]="'video'">
-          <span class="material-icons-outlined"> play_circle </span>
-        </button>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="'/assets/' + 3 + '.jpg'" alt="Random third slide" />
-      </div>
-      <div class="carousel-caption">
-        <button class="btn btn-outline-primary" [routerLink]="'video'">
-          <span class="material-icons-outlined"> play_circle </span>
-        </button>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="'/assets/' + 4 + '.jpg'" alt="Random fourth slide" />
-      </div>
-      <div class="carousel-caption">
-        <button class="btn btn-outline-primary" [routerLink]="'video'">
-          <span class="material-icons-outlined"> play_circle </span>
-        </button>
-      </div>
-    </ng-template>
-  </ngb-carousel>
+  <div>
+    <ngb-carousel id="carouselHero" *ngIf="images" class="mb-3">
+      <ng-template
+        ngbSlide
+        *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+      >
+        <div class="picsum-img-wrapper">
+          <img
+            [src]="'/assets/' + x + '.jpg'"
+            alt="Random first slide"
+            style="
+              background-color: black;
+              height: -webkit-fill-available;
+              width: -webkit-fill-available;
+            "
+          />
+        </div>
+        <div class="carousel-caption">
+          <button class="btn btn-outline-primary" [routerLink]="'video'">
+            <span class="material-icons-outlined"> play_circle </span>
+          </button>
+        </div>
+      </ng-template>
+      <!-- <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="'/assets/' + 2 + '.jpg'" alt="Random second slide" />
+        </div>
+        <div class="carousel-caption">
+          <button class="btn btn-outline-primary" [routerLink]="'video'">
+            <span class="material-icons-outlined"> play_circle </span>
+          </button>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="'/assets/' + 3 + '.jpg'" alt="Random third slide" />
+        </div>
+        <div class="carousel-caption">
+          <button class="btn btn-outline-primary" [routerLink]="'video'">
+            <span class="material-icons-outlined"> play_circle </span>
+          </button>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="'/assets/' + 4 + '.jpg'" alt="Random fourth slide" />
+        </div>
+        <div class="carousel-caption">
+          <button class="btn btn-outline-primary" [routerLink]="'video'">
+            <span class="material-icons-outlined"> play_circle </span>
+          </button>
+        </div>
+      </ng-template> -->
+    </ngb-carousel>
+  </div>
+
   <div class="d-flex flex-wrap">
     <div
       class="card row-card text-bg-dark m-2"
       style="width: 18rem"
-      *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]" [routerLink]="'individual'"
+      *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+      [routerLink]="'individual'"
     >
       <img [src]="'/assets/' + x + '.jpg'" class="card-img" alt="..." />
       <div class="card-img-overlay bottom-0 start-50">
