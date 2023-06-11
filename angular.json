@@ -37,7 +37,8 @@
                 "input": "node_modules/shaka-player/dist/shaka-player.compiled.js",
                 "inject": true,
                 "bundleName": "shaka"
-              }
+              },
+              "node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {

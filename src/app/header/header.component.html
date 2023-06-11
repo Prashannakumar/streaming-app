@@ -1,18 +1,88 @@
 <header
-  class="header p-2 mb-2 d-flex bg-primary text-white justify-content-between"
+  class="header p-2 mb-1 d-flex bg-primary text-white justify-content-between"
+  style="
+    background: linear-gradient(65deg, #030d31, #47459d);
+    background-color: #184e8e;
+  "
 >
   <div class="m-2 me-4">
-    <span class="material-icons-outlined"> video_library </span>
+    <span class="material-icons-outlined cursor-pointer" routerLink="/">
+      smart_display
+    </span>
   </div>
-  <div ngbDropdown class="d-inline-block m-2 me-4 mt-0">
-    <button class="btn btn-primary d-flex align-items-center" id="dropdownForm1" ngbDropdownToggle>
+  <div>
+    <div ngbDropdown class="d-inline-block m-2">
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="dropdownBasic1"
+        ngbDropdownToggle
+      >
+        Home
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem>All</button>
+        <button ngbDropdownItem>Movies</button>
+        <button ngbDropdownItem>Series</button>
+        <button ngbDropdownItem>TV Shows</button>
+      </div>
+    </div>
+    <div ngbDropdown class="d-inline-block m-2">
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="dropdownBasic1"
+        ngbDropdownToggle
+      >
+        Categories
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem>Action</button>
+        <button ngbDropdownItem>Comedy</button>
+        <button ngbDropdownItem>Animation</button>
+        <button ngbDropdownItem>Documentary</button>
+        <button ngbDropdownItem>Drama</button>
+      </div>
+    </div>
+    <div ngbDropdown class="d-inline-block m-2">
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="dropdownBasic1"
+        ngbDropdownToggle
+      >
+        Language
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem>Tamil</button>
+        <button ngbDropdownItem>English</button>
+        <button ngbDropdownItem>Hindi</button>
+        <button ngbDropdownItem>Telugu</button>
+        <button ngbDropdownItem>Malayalam</button>
+      </div>
+    </div>
+  </div>
+  <div ngbDropdown class="d-inline-block m-2 me-4">
+    <button
+      class="btn btn-primary d-flex align-items-center"
+      id="dropdownForm1"
+      ngbDropdownToggle
+    >
       <span class="material-icons-outlined"> account_circle </span>
     </button>
     <div ngbDropdownMenu aria-labelledby="dropdownForm1">
-      <button ngbDropdownItem class="d-flex align-items-center" (click)="openModalDialogCustomClass(content)">
+      <button
+        ngbDropdownItem
+        class="d-flex align-items-center"
+        (click)="openModalDialogCustomClass(content)"
+      >
         <span class="material-icons-outlined"> person </span>Profile
       </button>
-      <button ngbDropdownItem class="d-flex align-items-center" (click)="userLogOut()">
+      <button
+        ngbDropdownItem
+        class="d-flex align-items-center"
+        (click)="userLogOut()"
+      >
         <span class="material-icons-outlined"> logout </span>Logout
       </button>
     </div>

@@ -1,4 +1,5 @@
 <div class="card bg-primary">
+  <span id="newJ"></span>
   <!-- <button class="btn btn-primary" [routerLink]="'video'">video</button> -->
   <div>
     <ngb-carousel id="carouselHero" *ngIf="images" class="mb-3">
@@ -18,41 +19,12 @@
           />
         </div>
         <div class="carousel-caption">
-          <button class="btn btn-outline-primary" [routerLink]="'video'">
-            <span class="material-icons-outlined"> play_circle </span>
+          <button class="btn btn-primary m-2" [routerLink]="'video'">
+           Play Movie 
+           <!-- <span class="material-icons-outlined"> play_circle </span> -->
           </button>
         </div>
       </ng-template>
-      <!-- <ng-template ngbSlide>
-        <div class="picsum-img-wrapper">
-          <img [src]="'/assets/' + 2 + '.jpg'" alt="Random second slide" />
-        </div>
-        <div class="carousel-caption">
-          <button class="btn btn-outline-primary" [routerLink]="'video'">
-            <span class="material-icons-outlined"> play_circle </span>
-          </button>
-        </div>
-      </ng-template>
-      <ng-template ngbSlide>
-        <div class="picsum-img-wrapper">
-          <img [src]="'/assets/' + 3 + '.jpg'" alt="Random third slide" />
-        </div>
-        <div class="carousel-caption">
-          <button class="btn btn-outline-primary" [routerLink]="'video'">
-            <span class="material-icons-outlined"> play_circle </span>
-          </button>
-        </div>
-      </ng-template>
-      <ng-template ngbSlide>
-        <div class="picsum-img-wrapper">
-          <img [src]="'/assets/' + 4 + '.jpg'" alt="Random fourth slide" />
-        </div>
-        <div class="carousel-caption">
-          <button class="btn btn-outline-primary" [routerLink]="'video'">
-            <span class="material-icons-outlined"> play_circle </span>
-          </button>
-        </div>
-      </ng-template> -->
     </ngb-carousel>
   </div>
 
@@ -61,17 +33,21 @@
       class="card row-card text-bg-dark m-2"
       style="width: 18rem"
       *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
-      [routerLink]="'individual'"
+      [routerLink]="'individual/'+x"
     >
       <img [src]="'/assets/' + x + '.jpg'" class="card-img" alt="..." />
       <div class="card-img-overlay bottom-0 start-50">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content.
-        </p>
-        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+        <h5 class="card-title">Pathaan</h5>
+        <div class="card-text">
+          <div class="d-flex flex-column" style="font-size: smaller">
+            <p>Starring : Shah Rukh Khan, Deepika Padukone, John Abraham</p>
+            <p>Language : Hindi, English, Russian</p>
+            <p>imdbRating: 6.0</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- / -->

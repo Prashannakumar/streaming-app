@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRouting } from './app-routing';
 
 // css modules
-
 
 // components
 import { AppComponent } from './app.component';
@@ -22,16 +21,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppComponent,
     LoginComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRouting,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
   ],
   providers: [GalleryService],
   bootstrap: [AppComponent],
-  exports: [NgbModule],
+  exports: [NgbModule, HttpClientModule],
 })
-export class AppModule { }
+export class AppModule {}

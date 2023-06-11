@@ -1,1 +1,34 @@
-<p>individual-page works!</p>
+<div className="banner-container" *ngIf="active_param">
+  <div class="img-container">
+    <img
+      [src]="'/assets/' + active_param + '.jpg'"
+      alt="Random first slide"
+      style="
+        background-color: black;
+        height: -webkit-fill-available;
+        width: -webkit-fill-available;
+      "
+    />
+    <div class="bottom-content">
+      <h1>Pathaan</h1>
+
+      <p>Starring : Shah Rukh Khan, Deepika Padukone, John Abraham</p>
+      <p>Genre : Action, Adventure, Thriller</p>
+      <div>
+        Plot : An Indian agent races against a doomsday clock as a ruthless
+        mercenary, <br />
+        with a bitter vendetta, mounts an apocalyptic attack against the
+        country.
+      </div>
+      <p>Language : Hindi, English, Russian</p>
+      <p>imdbRating: 6.0</p>
+
+      <button class="btn btn-primary d-flex mb-3" routerLink="/video">
+        <span class="material-icons-outlined me-2"> play_circle </span> Watch Movie
+      </button>
+      <button class="btn btn-outline-primary d-flex">
+        <span class="material-icons-outlined me-2"> share </span> Share
+      </button>
+    </div>
+  </div>
+</div>

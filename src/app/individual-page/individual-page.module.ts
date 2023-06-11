@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IndividualPageComponent } from './individual-page.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -9,6 +10,7 @@ import { IndividualPageComponent } from './individual-page.component';
     IndividualPageComponent
   ],
   imports: [
+    RouterModule.forChild([{ path: '', component: IndividualPageComponent }]),
     CommonModule
   ]
 })

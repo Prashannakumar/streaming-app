@@ -16,7 +16,7 @@ const routes: Routes = [
           import('./video-page/video-page.module').then((m) => m.VideoPageModule),
       },
       {
-        path: 'individual',
+        path: 'individual/:req_param',
         loadChildren: () =>
           import('./individual-page/individual-page.module').then((m) => m.IndividualPageModule),
       },
