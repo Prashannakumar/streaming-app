@@ -1,4 +1,4 @@
-<div className="banner-container" *ngIf="active_param">
+<!-- <div className="banner-container col-sm-6 col-md-8 col-lg-12" *ngIf="active_param">
   <div class="img-container">
     <img
       [src]="'/assets/' + active_param + '.jpg'"
@@ -30,5 +30,34 @@
         <span class="material-icons-outlined me-2"> share </span> Share
       </button>
     </div>
+  </div>
+</div> -->
+
+
+<div class="card text-bg-dark">
+  <img [src]="'/assets/' + active_param + '.jpg'" class="card-img resImg" alt="..." style="
+  background-color: black;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+">
+  <div class="card-img-overlay bottom-content">
+    <h5 class="card-title">Pathaan</h5>
+    <p>Starring : Shah Rukh Khan, Deepika Padukone, John Abraham</p>
+      <p>Genre : Action, Adventure, Thriller</p>
+      <div>
+        Plot : An Indian agent races against a doomsday clock as a ruthless
+        mercenary, <br />
+        with a bitter vendetta, mounts an apocalyptic attack against the
+        country.
+      </div>
+      <p>Language : Hindi, English, Russian</p>
+      <p>imdbRating: 6.0</p>
+
+      <button class="btn btn-primary d-flex mb-3" routerLink="/video">
+        <span class="material-icons-outlined me-2"> play_circle </span> Watch Movie
+      </button>
+      <button class="btn btn-outline-primary d-flex">
+        <span class="material-icons-outlined me-2"> share </span> Share
+      </button>
   </div>
 </div>
